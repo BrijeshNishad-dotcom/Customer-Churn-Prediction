@@ -118,8 +118,10 @@ with col1:
 with col2:
     senior_citizen = st.selectbox(
         "Senior Citizen",
-        [0, 1]
+        ["No", "Yes"]
     )
+
+    senior_citizen = 1 if senior_citizen == "Yes" else 0
 
 with col3:
     partner = st.selectbox(
